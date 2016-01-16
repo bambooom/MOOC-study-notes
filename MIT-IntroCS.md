@@ -1,6 +1,6 @@
 # MITx: 6.00.1x Introduction to Computer Science and Programming Using Python
 
-## Week1-Lecture 1
+## Lecture 1
 
 * Knowledge:
 	+ Declarative knowledge: statement of a fact
@@ -26,3 +26,17 @@
 		- Semantics (语义): no statics semantics, the meaning intended to do
 
 > Computational mode of thinking: taking a problem description and breaking it down into a recipe, a sequence of how-to steps
+
+## Lecture 2
+
+* low level language - similar to internal control unit
+	- source code -> checker -> interpreter -> output
+* high level - more abstract terms
+	- source code -> checker -> compiler -> object code -> interpreter -> output
+* interpreted language - slower, easier to find errors
+
+### Python objects
+* scalar objects
+	+ int
+	+ float
+	+ boolean
