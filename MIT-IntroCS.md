@@ -40,3 +40,5 @@
 	+ int
 	+ float
 	+ boolean
+* Non-scalar objects
+	+ string
