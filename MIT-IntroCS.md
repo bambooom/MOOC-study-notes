@@ -1,6 +1,6 @@
 # MITx: 6.00.1x Introduction to Computer Science and Programming Using Python
 
-## Lecture 1
+## Lecture 1 Intro
 
 * Knowledge:
 	+ Declarative knowledge: statement of a fact
@@ -22,12 +22,12 @@
 		- numbers/strings/operators -> words in English
 	+ Syntax - well-formed
 	+ Semantics - meaning
-		- static semantics: which syntactically valid strings have a meaning 
+		- static semantics: which syntactically valid strings have a meaning
 		- Semantics (语义): no statics semantics, the meaning intended to do
 
 > Computational mode of thinking: taking a problem description and breaking it down into a recipe, a sequence of how-to steps
 
-## Lecture 2
+## Lecture 2: Core elements of Programs
 
 * low level language - similar to internal control unit
 	- source code -> checker -> interpreter -> output
@@ -42,3 +42,20 @@
 	+ boolean
 * Non-scalar objects
 	+ string
+
+## Lecture 3: Simple Algorithms
+
+* Iteration
+	+ reuse a piece of code
+	+ need an iteration variable
+	+ need to test variable
+	+ `Guess and check`
+		- need good way to generate *Guess*
+	+ `Exhaustive enumeration`
+
+* dealing with floats
+	+ binary #
+	+ conversion
+		- **If there is no integer p such that x*(2**p) is a whole number,
+		then internal representation is always an approximation**
+		- testing floats by `abs(x-y)<0.0001` instead of `x == y`
