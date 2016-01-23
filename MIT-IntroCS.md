@@ -59,3 +59,11 @@
 		- **If there is no integer p such that x*(2**p) is a whole number,
 		then internal representation is always an approximation**
 		- testing floats by `abs(x-y)<0.0001` instead of `x == y`
+* iterative Algorithms
+	* approximation methods - stepwise
+	* bisection search
+		+ cutting half
+		+ radically reduce computation time
+	* Newton-Raphson Algorithms
+		+ root for polynomial = 0
+		+ `p-p(g)/p'(g)`
