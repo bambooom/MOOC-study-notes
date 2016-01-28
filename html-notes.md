@@ -61,10 +61,12 @@ _icon.png"></a> #pic as anchoring link
 
 ---
 
-## Style
+### Style
 * CSS : cascading style sheets
 	* 1 CSS file used by multiple pages
 	* `<link href="html_example.css" rel="stylesheet" type="text/css">`
+	* class rules
+		* `.classname {color: purple}`
 	* inline style
 		* higher priority
 	* `pseudo-classes`
@@ -77,3 +79,34 @@ _icon.png"></a> #pic as anchoring link
 		* `a:active {color:red}`
 			* currently being processed
 		* `p:empty {color: red}`
+
+### Tables
+```html
+<table>
+		<thead>
+				<tr> <th>...</th> <th>...</th> </tr>
+		</thead>
+		<tbody>
+				<tr> <td>...</td> <td>...</td> </tr>
+				<tr> <td>...</td> <td>...</td> </tr>
+		</tbody>
+</table>
+```
+multiple class
+
+### div & span
+* `div` no default style/meaning
+	* absolute position
+```html
+<div style="position:absolute; top: 90px; left: 60px">
+This is a div
+</div>
+```
+	* relative position
+  go down 20px then go left 20px
+```html
+<div style="position: relative; top: -20px; left: -20px">
+This is a div
+</div>
+```
+* `span` used for a few words
