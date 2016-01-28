@@ -5,7 +5,7 @@
 ### image
 
 ```html
-<img src="stella_photo.jpg" width="300" /> # no height, browser automatically choose height by width 
+<img src="stella_photo.jpg" width="300" /> # no height, browser automatically choose height by width
 <img src="stella_photo.jpg" width="50%" />  # % is relative to the body/container/.. contains the image, called parent
 
 ```
@@ -50,12 +50,30 @@ _icon.png"></a> #pic as anchoring link
 * then use `<a href="#here">Go here</a>`
 * from another web page use `<a href="page.html#here">Go here</a>`
 
+### void elements
+* no end tag
+* `<meta name = "author">`
+* `<img>`
+* `<input>`
+* `<br>`
+* `<wbr>` - long word break
+* `<hr>` - horizontal rule/line
 
+---
 
-
-
-
-
-
-
-
+## Style
+* CSS : cascading style sheets
+	* 1 CSS file used by multiple pages
+	* `<link href="html_example.css" rel="stylesheet" type="text/css">`
+	* inline style
+		* higher priority
+	* `pseudo-classes`
+		* intelligence
+		* `h1:hover {color: red}`
+			* mouse movers over
+		* `a:link {color: red}`
+		* `a:visited {color: red}`
+			* visited page
+		* `a:active {color:red}`
+			* currently being processed
+		* `p:empty {color: red}`
