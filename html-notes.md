@@ -79,6 +79,10 @@ _icon.png"></a> #pic as anchoring link
 		* `a:active {color:red}`
 			* currently being processed
 		* `p:empty {color: red}`
+* style rule priority
+	* more than one style rule, later one applies.
+	* inline style rule always highest precedence
+
 
 ### Tables
 ```html
