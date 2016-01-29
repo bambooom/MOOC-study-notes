@@ -59,8 +59,6 @@ _icon.png"></a> #pic as anchoring link
 * `<wbr>` - long word break
 * `<hr>` - horizontal rule/line
 
----
-
 ### Style
 * CSS : cascading style sheets
 	* 1 CSS file used by multiple pages
@@ -114,3 +112,75 @@ This is a div
 </div>
 ```
 * `span` used for a few words
+
+### Forms
+* from browser to server
+
+```html
+<form action="destination" method="GET or POST">
+	<input type="submit" value="submit">
+</form>
+```
+* `destination`
+	* server program `http://www.server.com/program.php`
+	* on same server `dir/program.php`
+	* same server same dir `program.php`
+
+```html
+<form>
+	<input type="text" name="feedback"> <br>
+	Please select each of the following that you have. <br>
+	<input type="checkbox" name="items" value="car">
+	<input type="checkbox" name="items" value="house">
+	Please indicate yout intelligence level.<br>
+	<input type="radio" name="iq" value="high">High <br>
+	<input type="radio" name="iq" value="medium">Medium <br>
+	<input type="radio" name="iq" value="low">Low <br>
+</form>
+```
+* `radio` type means unique choice
+* `type="password"` cannot use GET method
+* dropdown menu cell
+```html
+<form>
+	<select name="cities">
+		<option value="hk">Hong Kong</option>
+		<option value="ny">New York</option>
+		<option value="sf">San Francisco</option>
+	</select>
+</form>
+```
+
+* useful attribute
+	* `value="sth"`
+	* `placeholder="sth"` - default text but disappear when user typing
+	* `autofoxus` given focus to start field
+	* `required` sets must fill in fields
+
+```html
+<label for="age">Age: </label>
+<input type="text" id="age" name="age" required>
+```
+* `for` attribute corresponding to the `id` of `input`
+* `name` used by server
+
+#### file upload
+```html
+<form action="destination" method="post" enctype="part/form-data">
+	<input type="file" name="file2upload">
+	<input type="submit" value="upload the file">
+</form>
+```
+server program may deal with the files.
+
+#### input new elements
+* `<input type="number">`
+* `<input type="date">`
+* `<input type="time">`
+* `<input type="color">` color picker
+* `<input type="range">` slider
+
+#### elements grouping
+* `<fieldset>` + `<legend>`
+* visual way to grouping
+* a box surrounding
