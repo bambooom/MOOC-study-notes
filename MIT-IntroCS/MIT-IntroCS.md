@@ -67,3 +67,20 @@
 	* Newton-Raphson Algorithms
 		+ root for polynomial = 0
 		+ `p-p(g)/p'(g)`
+
+## Lecture 4: Functions
+* Exceptions
+	+ stop it by **raise an exceptions**
+		* `raise Exception("error message")`
+	+ 'else' 'finally'
+	```python
+	def divide(x,y):
+		try:
+			result = x/y
+		except ZeroDivisionError as e:
+			print "division by zero"+str(e)
+		else:
+			print "result is", result
+		finally:
+			print "executing finally clause"
+	``` 
