@@ -1,0 +1,226 @@
+
+
+body {
+  background-image : url("../images/flower.jpeg");
+  background-size: cover;
+}
+
+/*#main {
+  background-image : url("images/bgpic.jpeg");
+}*/
+.profile-content{
+  width:320px;
+  text-align: center;
+  background-color: #fcf5f4;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-left: 70px;
+  opacity: 0.8;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.image {
+  background-image: url("http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201406/211609076566.jpg");
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+.name-headline {
+  text-align: center;
+}
+
+
+.blog {
+  background-color: #607b8b;
+  padding: 5px;
+}
+
+a {
+  color: #fcf5f4;
+  text-decoration: none;
+  display: block;
+  padding: 3px;
+  
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  color: #bb4477;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0px auto;
+  opacity: 0.7;
+}
+.button:hover {
+  opacity: 1;
+}
+
+nav.topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  background-color: transparent;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav.topnav .button {
+  display: inline-block;
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid;
+  border-color: #fcf5f4;
+  color: #fcf5f4;
+  padding: 5px 15px;
+}
+
+/*nav.topnav > ul.usersetting {
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  text-align: right;
+}*/
+
+div {
+  padding:10px;
+  margin:0;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+  font-family: 'Slabo 27px', serif;
+} /* change user agent style */
+
+ul.inline>li {
+  vertical-align: baseline;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px auto;
+  color: #d3cabf;
+}
+
+img {
+  padding: 4px;
+}
+
+img.social-links {
+  width: 30px;
+  height: 30px;
+  color: #778899;
+}
+
+
+.flex-box {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #6da1aa;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {  
+  font-size: 14px;
+  color: #000;
+  line-height: 29px;
+  margin: 0;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 17px;
+}
+
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+}
+
+
+
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+/*  body {
+    background-image : url("../images/bgpic.jpeg");
+  }*/
+}
+
+@media only screen and (max-width: 750px) {
+  #lets-connect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
