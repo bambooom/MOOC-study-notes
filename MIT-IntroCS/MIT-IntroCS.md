@@ -83,4 +83,40 @@
 			print "result is", result
 		finally:
 			print "executing finally clause"
-	``` 
+	```
+
+## Lecture 7: Debugging
+* Testing methods: trying examples
+* Debugging methods: fixing
+* Design the code to be ease of Testing and Debugging
+	+ break into components
+	+ document constraints: inputs,outputs...
+	+ document assumptions behind code design
+
+* Test suite
+	+ want to find a collection of inputs that has high likelihood of revealing bugs
+		+ partition space of inputs into subsets that provide equivalent information about correctness
+			+ natural partition
+			+ random testing
+			+ black-box testing
+				* use heuristics based on exploring paths through the specifications
+			+ glass-box testing
+				* use heuristics based on exploring paths through the code
+		+ construct test suite that contains one input from each element partition
+		+ run test suite
+
+
+* black-box testing
+	+ test suite without looking at code
+	+ no bias, no knowledge of implementation
+	+ boundary cases
+* glass-box testing
+	+ use code to guide design of test cases
+	+ path-complete: if every potential path through the code is tested at least once
+	+ can still miss a bug
+	+ rules of thumb
+		+ exercise both branches of all if statement
+		+ ensure each except clause is executed
+		+ for loop: not entered/done once/done more than once
+		+ while loop: same as for loop, exit loop
+		+ recursive calls: none/one/more

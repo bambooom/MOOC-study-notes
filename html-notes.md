@@ -184,3 +184,170 @@ server program may deal with the files.
 * `<fieldset>` + `<legend>`
 * visual way to grouping
 * a box surrounding
+
+#### `alt` text to an image
+alt attributes, also known as alt text, are what browsers will display if they fail to load the image. alt attributes are also important for blind or visually impaired users to understand what an image portrays. And search engines also look at alt attributes.
+```html
+<img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back" src="https://bit.ly/fcc-relaxing-cat">
+```
+
+#### Form element
+```html
+<form action="/submit-cat-photo">
+	<input type="text" placeholder="cat photo URL">
+	<button type="submit">submit</button>
+</form>
+```
+
+#### radio buttons 单选
+default checked
+```html
+<label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+```
+
+#### checkbox
+default checked
+```html
+<label><input type="checkbox" name="personality" checked> Loving</label>
+```
+#### id attributes
+除了name 还可以有 id, 在 jQuery 中会用到, id 的 CSS 也可在 style 中设置
+```css
+#cat-photo-element {
+  background-color: green;
+}
+```
+
+## Padding & Margin
+padding: amount of space between the element and its border
+上下?
+margin: amount of space between an element's border and surrounding elements
+上下左右都有?
+
+```css
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: red;
+    padding: 40px;
+		margin: 20px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 20px;
+		margin: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+```
+
+## Override Styles in Subsequent CSS
+It doesn't matter which order the classes are listed in the HTML element.
+
+However, the order of the class declarations in the <style> section are what is important. The second declaration will always take precedence over the first. Because .blue-text is declared second, it overrides the attributes of .pink-text
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
+```
+
+### id attributes always take precedence
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  #orange-text {
+    color: orange;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+```
+in-line style > id attributes > class came last
+
+## Responsive Design with Bootstrap
+
+#### Font Awesome
+```html
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+```
+
+#### Add a thumbs-up icon
+```html
+<i class="fa fa-thumbs-up"></i>
+```
+
+#### well class
+Bootstrap has a class called well that can create a visual sense of depth for your columns.
+
+## jQuery
+
+#### script tag
+code you put inside this function will run as soon as your browser has loaded your page.
+
+This is important because without your document ready function, your code may run before your HTML is rendered, which would cause bugs.
+```javascript
+<script>
+  $(document).ready(function() {
+		$("button").addClass("animated bounce"); //Animate.css need, jQuery lib need
+  });
+</script>
+```
+
+jQuery often selects an HTML element with a selector, then does something to that element.
+You see how we made all of your button elements bounce? We selected them with $("button"), then we added some CSS classes to them with .addClass("animated bounce");
+
+three ways of targeting elements: by type: $("button"), by class: $(".btn"), and by id $("#target1")
+
+jQuery has a function called .prop() that allows you to adjust the properties of elements.
+
+#### change text inside an element using jQuery
+jQuery has a function called .html() that lets you add HTML tags and text within an element. Any content previously within the element will be completely replaced with the content you provide using this function.
+
+Here's how you would rewrite and emphasize the text of our heading:
+
+$("h3").html("<em>jQuery Playground</em>");
+
+jQuery also has a similar function called .text() that only alters text without adding tags. In other words, this function will not evaluate any HTML tags passed to it, but will instead treat it as text you want to replace with.
